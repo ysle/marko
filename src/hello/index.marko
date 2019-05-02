@@ -1,0 +1,9 @@
+<pre>${input.name} | v${input.version}</pre>
+<hr/>
+<ul>
+	<for|user| of=state.users>
+		<li>
+			<pre>${JSON.stringify(user, null, 2)}</pre>
+		</li>
+	</for>
+</ul>
