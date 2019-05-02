@@ -5,11 +5,13 @@
 	"scripts": {
 		"start": "webpack-dev-server --mode development",
 		"build": "webpack --mode production",
-		"postversion": "npm run build && git commit -am dist-update && git push && git push --tags"
+		"postversion": "npm run prettier && npm run build && git commit -am dist-update && git push && git push --tags",
+		"prettier": "prettier -c ./src/**.js"
 	},
 	"dependencies": {
 		"marko": "^4.16.13",
 		"marko-loader": "^1.5.0",
+		"prettier": "^1.17.0",
 		"webpack": "^4.30.0",
 		"webpack-cli": "^3.3.1",
 		"webpack-dev-server": "^3.3.1"
