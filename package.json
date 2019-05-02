@@ -4,7 +4,7 @@
 	"description": "",
 	"scripts": {
 		"start": "webpack-dev-server --mode development",
-		"bild": "webpack --mode production"
+		"build": "webpack --mode production"
 	},
 	"dependencies": {
 		"marko": "^4.16.13",
